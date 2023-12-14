@@ -10,6 +10,7 @@ Allows you to resize players at the end of the round
 
 * Download latest [release](https://github.com/dronelektron/bonus-round-resize/releases) (compiled for SourceMod 1.11)
 * Extract "plugins" folder to "addons/sourcemod" folder of your server
+* Install [player-resize](https://github.com/dronelektron/player-resize)
 
 ### Console Variables
 
