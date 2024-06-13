@@ -3,6 +3,7 @@
 #include "bonus-round-events/api"
 #include "player-resize/api"
 #include "player-resize/client"
+#include "player-resize/entity"
 
 #include "modules/console-variable.sp"
 
@@ -26,5 +27,11 @@ public void BonusRound_OnLoser(int client) {
         float scale = Variable_PlayerScale();
 
         ResizePlayer(client, scale, RESIZE_MODE_ROUND_START);
+    }
+}
+
+public void BonusRound_OnWinner(int client) {
+    if (Variable_PluginEnabled()) {
+        ResizePlayer(client, BASE_SCALE, RESIZE_MODE_NONE);
     }
 }
